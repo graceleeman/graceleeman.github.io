@@ -152,71 +152,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-spark-基础知识整理（二）-RDD专题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/09/spark-基础知识整理（二）-RDD专题/">spark-基础知识整理（二）-RDD专题</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/09/spark-基础知识整理（二）-RDD专题/" class="archive-article-date">
-  	<time datetime="2018-10-09T09:05:04.688Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、RDD及其特点"><a href="#一、RDD及其特点" class="headerlink" title="一、RDD及其特点"></a>一、RDD及其特点</h2><p><strong>1. </strong>RDD（Resillient Distributed Dataset）弹性分布式数据集，是spark提供的核心抽象。它代表一个不可变、可分区、里面的元素可并行计算的集合<br><strong>2. </strong>RDD在抽象上来说是一种元素集合，包含了数据。它是被分区的，分为多个分区，每个分区分布在集群中的不同节点上，从而让RDD中的数据可以被并行操作（分布式数据集）<br><strong>3. </strong>RDD通常通过hadoop上的文件，即hdfs文件或者hive表来进行创建，有时也可以通过应用程序中的集合来创建。<br><strong>4. </strong>RDD最重要的特性就是提供了容错性，可以自动从节点失败中恢复过来，即某节点上的RDD partition，因为节点故障，导致数据丢了，那么RDD会自动通过自己数据来源重新计算该partition，这一切对使用者是透明的<br><strong>5. </strong>RDD的数据默认情况下存在内存中，但是在内存资源不足是，spark会自动将RDD数据写入磁盘（弹性）<br>
-        
-          <a class="article-more-a" href="/2018/10/09/spark-基础知识整理（二）-RDD专题/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/09/spark-基础知识整理（二）-RDD专题/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -261,6 +196,71 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/10/09/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-spark-基础知识整理（二）-RDD专题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/19/spark-基础知识整理（二）-RDD专题/">spark-基础知识整理（二）-RDD专题</a>
+    </h1>
+  
+
+        
+        <a href="/2015/08/19/spark-基础知识整理（二）-RDD专题/" class="archive-article-date">
+  	<time datetime="2015-08-18T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、RDD及其特点"><a href="#一、RDD及其特点" class="headerlink" title="一、RDD及其特点"></a>一、RDD及其特点</h2><p><strong>1. </strong>RDD（Resillient Distributed Dataset）弹性分布式数据集，是spark提供的核心抽象。它代表一个不可变、可分区、里面的元素可并行计算的集合<br><strong>2. </strong>RDD在抽象上来说是一种元素集合，包含了数据。它是被分区的，分为多个分区，每个分区分布在集群中的不同节点上，从而让RDD中的数据可以被并行操作（分布式数据集）<br><strong>3. </strong>RDD通常通过hadoop上的文件，即hdfs文件或者hive表来进行创建，有时也可以通过应用程序中的集合来创建。<br><strong>4. </strong>RDD最重要的特性就是提供了容错性，可以自动从节点失败中恢复过来，即某节点上的RDD partition，因为节点故障，导致数据丢了，那么RDD会自动通过自己数据来源重新计算该partition，这一切对使用者是透明的<br><strong>5. </strong>RDD的数据默认情况下存在内存中，但是在内存资源不足是，spark会自动将RDD数据写入磁盘（弹性）<br>
+        
+          <a class="article-more-a" href="/2015/08/19/spark-基础知识整理（二）-RDD专题/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/08/19/spark-基础知识整理（二）-RDD专题/">展开全文 >></a>
         </p>
       
 
